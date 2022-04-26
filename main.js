@@ -5,6 +5,7 @@ function Transaccion(nombre, valor) {
 }
 //array
 let listaGastos = [];
+let total = 0;
 //funcion  que hace todo el trabajo
 function ingresarTransaccion() {
   let nombre = prompt("Ingresa el nombre del gasto");
@@ -13,7 +14,13 @@ function ingresarTransaccion() {
   //array
   listaGastos.push(Transaccion1);
   console.log(listaGastos);
-  ingresarTransaccion();
+
+  total = total + valor;
+  console.log(total);
 }
 
 ingresarTransaccion();
+ingresarTransaccion();
+ingresarTransaccion();
+
+document.write("Total gastado = $" + total);
