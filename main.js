@@ -15,12 +15,25 @@ function ingresarTransaccion() {
   listaGastos.push(Transaccion1);
   console.log(listaGastos);
 
-  total = total + valor;
+  
+ let lista = document.createElement("p")
+ lista.innerHTML = nombre
+
+ let precios = document.createElement("p")
+ precios.innerHTML = valor
+
+ document.getElementById("lista").appendChild(lista)
+ document.getElementById("precios").appendChild(precios)
+
+ total = total + valor;
   console.log(total);
 }
 
 ingresarTransaccion();
 ingresarTransaccion();
 ingresarTransaccion();
+ingresarTransaccion();
 
-document.write("Total gastado = $" + total);
+const gastos = document.getElementById("gastos")
+gastos.innerHTML= "Total gastado = $" + total;
+

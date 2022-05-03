@@ -12,12 +12,31 @@
     h1{
         text-align: center;
         color: rgb(128, 126, 126);
+        font-size: 3rem;
+    }
+
+    section{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+        font-size: 20px;
+    }
+
+    .total{
+        text-align: center;
+        font-size: 30px;
     }
 </style>
 </head>
 <body>
     <h1>Gestion de gastos</h1>  
   <hr>
+<section>
+  <div id="lista"></div>
+  <div id="precios"></div>
+</section>
+  <div  class="total" id="gastos"></div>
+
     <script src="main.js"></script>
 </body>
 </html>
